@@ -1,0 +1,27 @@
+uuid: be5552bb-5081-4f8b-9440-6e02add95f1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.mix_use
+  module:
+    - file
+id: node.mix_use.field_file
+field_name: field_file
+entity_type: node
+bundle: mix_use
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: mix_use/file
+  file_extensions: 'pdf docx doc txt'
+  max_filesize: ''
+  description_field: false
+field_type: file

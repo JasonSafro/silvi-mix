@@ -1,0 +1,23 @@
+uuid: f3f20887-d10b-4e28-b53b-49dad4e954fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mix_use
+  module:
+    - text
+id: node.mix_use.body
+field_name: body
+entity_type: node
+bundle: mix_use
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
