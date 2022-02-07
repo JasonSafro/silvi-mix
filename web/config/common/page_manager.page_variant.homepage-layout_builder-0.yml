@@ -1,0 +1,46 @@
+uuid: b44a47b5-3605-4616-b5e8-52cc019340e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+id: homepage-layout_builder-0
+label: 'Layout Builder'
+weight: 0
+variant: layout_builder
+variant_settings:
+  id: layout_builder
+  label: null
+  weight: 0
+  uuid: 3442592c-5576-4f91-9939-5633c9a0af2a
+  sections:
+    -
+      layout_id: layout_onecol
+      layout_settings:
+        label: 'Hero Image'
+        context_mapping: {  }
+      components: {  }
+      third_party_settings: {  }
+    -
+      layout_id: layout_twocol_section
+      layout_settings:
+        label: 'Content Blocks'
+        context_mapping: {  }
+        column_widths: 50-50
+      components:
+        aa8168d1-6c3a-4500-b830-6eb7d046baa1:
+          uuid: aa8168d1-6c3a-4500-b830-6eb7d046baa1
+          region: first
+          configuration:
+            id: user_login_block
+            label: 'User login'
+            label_display: visible
+            provider: user
+            context_mapping: {  }
+          weight: 0
+          additional: {  }
+      third_party_settings: {  }
+page: homepage
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

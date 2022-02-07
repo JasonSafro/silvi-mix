@@ -1,0 +1,12 @@
+uuid: 1d77a186-f8d0-4aaf-9d8d-629f0489d6fc
+langcode: en
+status: true
+dependencies: {  }
+id: homepage
+label: Homepage
+description: ''
+use_admin_theme: false
+path: /home
+access_logic: and
+access_conditions: {  }
+parameters: {  }
