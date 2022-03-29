@@ -12,8 +12,8 @@ _core:
   default_config_hash: pnCK21YFjH7iB4XDeokSq3N3XSr6qX8BsqMs9nmip6E
 id: bartik_footer
 theme: bartik
-region: footer_fifth
-weight: 0
+region: footer_second
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

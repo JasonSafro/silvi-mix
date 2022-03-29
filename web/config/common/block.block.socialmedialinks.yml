@@ -1,0 +1,129 @@
+uuid: 2e7cf790-ea99-4da7-b922-4f7731be0bcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - bartik
+id: socialmedialinks
+theme: bartik
+region: footer_fourth
+weight: -7
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Follow Us'
+  label_display: visible
+  provider: social_media_links
+  platforms:
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-10'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-9'
+    github:
+      value: ''
+      description: ''
+      weight: '-8'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-7'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-6'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-5'
+    email:
+      value: ''
+      description: ''
+      weight: '-4'
+    facebook:
+      value: www.facebook.com
+      description: ''
+      weight: '-3'
+    xing:
+      value: ''
+      description: ''
+      weight: '-2'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-1'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '0'
+    youtube:
+      value: ''
+      description: ''
+      weight: '1'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '2'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '3'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '4'
+    rss:
+      value: ''
+      description: ''
+      weight: '5'
+    behance:
+      value: ''
+      description: ''
+      weight: '6'
+    instagram:
+      value: ''
+      description: ''
+      weight: '7'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '8'
+    contact:
+      value: ''
+      description: ''
+      weight: '9'
+    website:
+      value: ''
+      description: ''
+      weight: '10'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '11'
+    drupal:
+      value: ''
+      description: ''
+      weight: '12'
+    twitter:
+      value: ''
+      description: ''
+      weight: '13'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }
