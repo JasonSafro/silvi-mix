@@ -54,3 +54,6 @@
 /web/README.md
 /web/example.gitignore
 /web/sites/development.services.yml
+
+# Ignore PHPStorm files
+.idea
