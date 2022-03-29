@@ -22,7 +22,8 @@
         "drupal/core-recommended": "^9.3",
         "drupal/page_manager": "4.0-beta6",
         "drupal/pathauto": "^1.8",
-        "drupal/require_login": "^2.4"
+        "drupal/require_login": "^2.4",
+        "drupal/social_media_links": "^2.8"
     },
     "conflict": {
         "drupal/drupal": "*"
