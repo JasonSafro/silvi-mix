@@ -1,0 +1,29 @@
+uuid: d29cd3d5-bc6d-4bcf-a159-d5a879383a12
+langcode: en
+status: true
+dependencies:
+  module:
+    - silvi_mix
+    - system
+  theme:
+    - bartik
+id: banner_homepage
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: formatted_text_in_config
+settings:
+  id: formatted_text_in_config
+  label: 'Login Page Banner'
+  label_display: visible
+  provider: silvi_mix
+  formatted_text: "<p><img src=\"#\" /></p>\r\n\r\n<section class=\"text-overlay\">\r\n<h1>Title</h1>\r\n\r\n<h2>Subtitle</h2>\r\n</section>\r\n"
+  formatted_text_format: full_html
+  css_classes: homepage-banner
+  common_usage: full_width_banner
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/user/login\r\n/user/password"

@@ -14,10 +14,11 @@ provider: null
 plugin: formatted_text_in_config
 settings:
   id: formatted_text_in_config
-  label: 'Formatted Text In Config'
+  label: 'Footer Branding and Contact'
   label_display: '0'
   provider: silvi_mix
   formatted_text: "<p><img src=\"#\" /> <a href=\"tel:804-426-6273\">804.426.6273</a></p>\r\n"
   formatted_text_format: full_html
   css_classes: coop-modify-this-in-block-admin
+  common_usage: 'no'
 visibility: {  }
