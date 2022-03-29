@@ -1,0 +1,7 @@
+name: Silvi Mix Tool Module
+type: module
+package: silvi
+description: 'Contains custom logic for the Silvi Mix Tool'
+
+version: 1.0
+core_version_requirement: ^8 || ^9

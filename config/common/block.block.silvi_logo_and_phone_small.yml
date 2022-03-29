@@ -1,0 +1,23 @@
+uuid: 76b711bf-aa44-46fd-bdea-aaf6a692cca8
+langcode: en
+status: true
+dependencies:
+  module:
+    - silvi_mix
+  theme:
+    - bartik
+id: silvi_logo_and_phone_small
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: formatted_text_in_config
+settings:
+  id: formatted_text_in_config
+  label: 'Formatted Text In Config'
+  label_display: '0'
+  provider: silvi_mix
+  formatted_text: "<p><img src=\"#\" /> <a href=\"tel:804-426-6273\">804.426.6273</a></p>\r\n"
+  formatted_text_format: full_html
+  css_classes: coop-modify-this-in-block-admin
+visibility: {  }
