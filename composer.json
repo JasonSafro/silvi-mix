@@ -23,7 +23,8 @@
         "drupal/page_manager": "4.0-beta6",
         "drupal/pathauto": "^1.8",
         "drupal/require_login": "^2.4",
-        "drupal/social_media_links": "^2.8"
+        "drupal/social_media_links": "^2.8",
+        "drush/drush": "^11.0"
     },
     "conflict": {
         "drupal/drupal": "*"
