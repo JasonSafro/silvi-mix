@@ -1,13 +1,13 @@
-uuid: 2e7cf790-ea99-4da7-b922-4f7731be0bcf
+uuid: 02d03e76-4718-49fb-a79e-aa16154817cb
 langcode: en
 status: true
 dependencies:
   module:
     - social_media_links
   theme:
-    - bartik
-id: socialmedialinks
-theme: bartik
+    - silvi_barrio
+id: silvi_barrio_socialmedialinks
+theme: silvi_barrio
 region: footer_fourth
 weight: -7
 provider: null

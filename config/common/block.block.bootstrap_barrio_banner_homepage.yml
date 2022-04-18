@@ -1,4 +1,4 @@
-uuid: 58a845b4-c2b2-4aff-9a00-63c148a9f35e
+uuid: 65fd0573-3c51-4d65-9099-b61bc935268a
 langcode: en
 status: true
 dependencies:
@@ -6,22 +6,22 @@ dependencies:
     - silvi_mix
     - system
   theme:
-    - bartik
-id: new_customer_cta
-theme: bartik
+    - bootstrap_barrio
+id: bootstrap_barrio_banner_homepage
+theme: bootstrap_barrio
 region: content
 weight: 0
 provider: null
 plugin: formatted_text_in_config
 settings:
   id: formatted_text_in_config
-  label: 'New Customer CTA'
+  label: 'Login Page Banner'
   label_display: visible
   provider: silvi_mix
-  formatted_text: "<h1>Lorem Title</h1>\r\n\r\n<p>Lorem ipsum work with Silvi</p>\r\n\r\n<p><a href=\"http://silvi.com\">Some link</a></p>\r\n"
+  formatted_text: "<p><img src=\"#\" /></p>\r\n\r\n<section class=\"text-overlay\">\r\n<h1>Title</h1>\r\n\r\n<h2>Subtitle</h2>\r\n</section>\r\n"
   formatted_text_format: full_html
-  common_usage: half_width_text_on_image
-  css_classes: ''
+  css_classes: homepage-banner
+  common_usage: full_width_banner
 visibility:
   request_path:
     id: request_path

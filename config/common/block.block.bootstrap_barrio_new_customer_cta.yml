@@ -1,4 +1,4 @@
-uuid: 58a845b4-c2b2-4aff-9a00-63c148a9f35e
+uuid: 41763302-e3d1-435f-92fe-34dc71baacfb
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - silvi_mix
     - system
   theme:
-    - bartik
-id: new_customer_cta
-theme: bartik
+    - bootstrap_barrio
+id: bootstrap_barrio_new_customer_cta
+theme: bootstrap_barrio
 region: content
 weight: 0
 provider: null

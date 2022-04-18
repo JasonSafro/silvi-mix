@@ -1,0 +1,22 @@
+uuid: 50a2fd02-dee4-4741-988e-7096aed74f31
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - silvi_barrio
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: silvi_barrio_messages
+theme: silvi_barrio
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 9aa6df39-56cf-4766-86a4-2fbd49611c53
+langcode: en
+status: true
+dependencies:
+  module:
+    - silvi_mix
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_silvi_logo_and_phone_small
+theme: bootstrap_barrio
+region: footer_first
+weight: 0
+provider: null
+plugin: formatted_text_in_config
+settings:
+  id: formatted_text_in_config
+  label: 'Footer Branding and Contact'
+  label_display: '0'
+  provider: silvi_mix
+  formatted_text: "<p><img src=\"#\" /> <a href=\"tel:804-426-6273\">804.426.6273</a></p>\r\n"
+  formatted_text_format: full_html
+  css_classes: coop-modify-this-in-block-admin
+  common_usage: 'no'
+visibility: {  }

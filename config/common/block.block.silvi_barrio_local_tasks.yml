@@ -1,0 +1,22 @@
+uuid: a1c27540-c418-4d79-ba59-eacd5c51f00f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - silvi_barrio
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: silvi_barrio_local_tasks
+theme: silvi_barrio
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

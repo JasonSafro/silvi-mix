@@ -1,13 +1,13 @@
-uuid: 2e7cf790-ea99-4da7-b922-4f7731be0bcf
+uuid: e0b41253-49f1-4d9e-92de-66569736b819
 langcode: en
 status: true
 dependencies:
   module:
     - social_media_links
   theme:
-    - bartik
-id: socialmedialinks
-theme: bartik
+    - bootstrap_barrio
+id: bootstrap_barrio_socialmedialinks
+theme: bootstrap_barrio
 region: footer_fourth
 weight: -7
 provider: null

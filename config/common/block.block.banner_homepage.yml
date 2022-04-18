@@ -18,7 +18,7 @@ settings:
   label: 'Login Page Banner'
   label_display: visible
   provider: silvi_mix
-  formatted_text: "<div class=\"hero__primary\">\r\n<div class=\"container\">\r\n<div class=\"hero__content\">\r\n<h1 class=\"hero__title\">Committed to Quality</h1>\r\n\r\n<h2 class=\"hero__subtitle\">Built with Silvi</h2>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>===================</p>\r\n\r\n<p>@coop let's copy the hero block from https://www.silvi.com/products/</p>\r\n\r\n<p>Maybe store the background image in some structured directories in the theme? Name it login_page_hero_image.png or something descriptive about it's use. That way it'll port with code and client can just replace the image when they want to change it.</p>\r\n"
+  formatted_text: "<p><img src=\"#\" /></p>\r\n\r\n<section class=\"text-overlay\">\r\n<h1>Title</h1>\r\n\r\n<h2>Subtitle</h2>\r\n</section>\r\n"
   formatted_text_format: full_html
   css_classes: homepage-banner
   common_usage: full_width_banner
