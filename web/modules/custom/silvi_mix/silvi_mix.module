@@ -4,3 +4,30 @@
  * @file
  * Hooks for Silvi Mix Tool module.
  */
+
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function silvi_mix_preprocess_node(&$variables) {
+  // Init, validate, and typecast.
+  $node = $variables['node'];
+  if (!($node instanceof Node)) :
+    return;
+  endif;
+
+  // Handle each bundle differently.
+  switch ($node->bundle()) :
+    case 'mix_use' :
+      if ($variables['view_mode'] == 'card_default') :
+        $url = Url::fromUri('internal:/node/add', ['query' => ['mix_use_id' => $node->id()]]);
+        $link = Link::fromTextAndUrl('Create a new Mix Design Request', $url);
+        $variables['create_new_mix_design_request'] = $link;
+      endif;
+      break;
+  endswitch;
+
+}
