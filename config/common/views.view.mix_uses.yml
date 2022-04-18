@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card_default
     - node.type.mix_use
+    - system.menu.main
   module:
     - node
     - user
@@ -22,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Mix Uses'
+      title: 'Learn More'
       fields:
         title:
           id: title
@@ -143,7 +144,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: card_default
       query:
         type: views_query
         options:
@@ -153,7 +155,20 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<a href="#">Click here</a> to download the Adobe Reader application.'
+            format: basic_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -172,6 +187,15 @@ display:
     display_options:
       display_extenders: {  }
       path: mix-uses
+      menu:
+        type: normal
+        title: 'Learn More'
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
