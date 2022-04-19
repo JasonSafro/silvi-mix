@@ -1,4 +1,128 @@
 /**
- * @file
- * Subtheme specific CSS.
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+body {
+  background: yellowgreen;
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+#header #navbar-main {
+  background: #111e27;
+}
+#header .nav-link {
+  color: #ffffff;
+  font: 600 1.125rem/1 "Teko", sans-serif;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  background: #111e27;
+  font-family: "Teko", sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: transparent;
+  vertical-align: top;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+picture,
+section,
+summary {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  position: relative;
+  line-height: 1;
+  z-index: 0;
+}
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.dialog-off-canvas-main-canvas,
+#page-wrapper {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.section-page {
+  flex: 1 0 auto;
+}
+
+.header {
+  position: relative;
+  z-index: 501;
+}
+
+.layout-main-wrapper {
+  position: relative;
+}
+
+.site-footer {
+  position: relative;
+  flex-shrink: 0;
+}
+/*# sourceMappingURL=style.css.map */

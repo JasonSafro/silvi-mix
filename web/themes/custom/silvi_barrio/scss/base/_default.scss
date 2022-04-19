@@ -1,0 +1,25 @@
+.dialog-off-canvas-main-canvas,
+#page-wrapper {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.section-page {
+  flex: 1 0 auto;
+}
+
+.header {
+  position: relative;
+  z-index: 501;
+}
+
+.layout-main-wrapper {
+  position: relative;
+}
+
+.site-footer {
+  position: relative;
+  flex-shrink: 0;
+}
+
