@@ -10,6 +10,12 @@ libraries:
   - silvi_barrio/global-styling
   - silvi_barrio/fonts
 
+libraries-override:
+  bootstrap_barrio/global-styling:
+    css:
+      component:
+        css/components/site-footer.css: false
+
 regions:
   top_header: 'Top header'
   top_header_form: 'Top header form'
@@ -22,6 +28,8 @@ regions:
   highlighted: Highlighted
   featured_top: 'Featured top'
   breadcrumb: Breadcrumb
+  page_title: 'Page title'
+  tabs: Tabs
   content: Content
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'

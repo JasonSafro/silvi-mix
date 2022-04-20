@@ -1,0 +1,51 @@
+.user-pass,
+.user-login-form {
+  background: $s-white-2;
+  padding: 20px 50px;
+
+  fieldset {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+
+    label {
+      display: flex;
+      align-items: flex-end;
+
+      &:after {
+        margin: auto 0.3em;
+      }
+    }
+
+    input {
+      border-radius: 0;
+      border: 1px solid $black;
+    }
+
+    .description {
+      display: none;
+    }
+  }
+
+  .form-actions {
+    margin-left: 110px;
+    margin-bottom: 0 !important;
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      color: $s-black;
+      background: $s-yellow;
+      text-transform: uppercase;
+      text-decoration: none;
+      font: 600 1.125rem/1.42 $font-teko;
+      padding: 8px 35px 3px;
+      margin: 6px 0 0;
+      border: none;
+      border-radius: 0;
+
+      &:hover {
+        background: $s-black-2;
+      }
+    }
+  }
+}

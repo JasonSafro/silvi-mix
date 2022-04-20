@@ -1,0 +1,9 @@
+{% if page.page_title %}
+  {% block page_title %}
+    <div class="page-title">
+      <div class="{{ container }} clearfix">
+        {{ page.page_title }}
+      </div>
+    </div>
+  {% endblock %}
+{% endif %}

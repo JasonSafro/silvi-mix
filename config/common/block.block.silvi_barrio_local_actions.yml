@@ -9,7 +9,7 @@ _core:
 id: silvi_barrio_local_actions
 theme: silvi_barrio
 region: content
-weight: -20
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

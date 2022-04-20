@@ -1,0 +1,41 @@
+uuid: 7039f55f-5bdd-4428-940a-d0c283c9fb95
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_default
+    - field.field.node.mix_use.body
+    - field.field.node.mix_use.field_file
+    - field.field.node.mix_use.field_image
+    - image.style.thumbnail
+    - node.type.mix_use
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.mix_use.card_default
+targetEntityType: node
+bundle: mix_use
+mode: card_default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_file: true

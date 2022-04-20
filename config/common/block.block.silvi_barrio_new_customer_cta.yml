@@ -10,17 +10,17 @@ dependencies:
 id: silvi_barrio_new_customer_cta
 theme: silvi_barrio
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: formatted_text_in_config
 settings:
   id: formatted_text_in_config
   label: 'New Customer CTA'
-  label_display: visible
+  label_display: '0'
   provider: silvi_mix
-  formatted_text: "<h1>Lorem Title</h1>\r\n\r\n<p>Lorem ipsum work with Silvi</p>\r\n\r\n<p><a href=\"http://silvi.com\">Some link</a></p>\r\n"
+  formatted_text: "<h4>Ready to order or have questions? Give us a call!</h4>\r\n\r\n<p>Our knowledgeable team is here to help you find the best products for your needs</p>\r\n\r\n<p><a href=\"http://silvi.com\">Some link</a></p>\r\n"
   formatted_text_format: full_html
-  common_usage: half_width_text_on_image
+  common_usage: half_width_text_on_solid
   css_classes: ''
 visibility:
   request_path:

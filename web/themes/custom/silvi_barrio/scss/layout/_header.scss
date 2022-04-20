@@ -3,14 +3,23 @@
 }
 
 #header {
+  background: $s-black;
+
   #navbar-main {
     background: $s-black;
   }
 
   .nav-link {
     color: $white;
-    //font: 600 1.5rem/1 $font-teko;
-    font: 600 1.125rem/1 $font-teko;
+    font: 600 1.5rem/1 $font-teko;
     text-transform: uppercase;
+
+    &:hover {
+      color: $s-yellow;
+    }
+
+    @media #{$min-md} {
+      font: 600 1.125rem/1 $font-teko;
+    }
   }
 }

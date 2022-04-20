@@ -8,8 +8,8 @@ _core:
   default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
 id: silvi_barrio_local_tasks
 theme: silvi_barrio
-region: content
-weight: -40
+region: tabs
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

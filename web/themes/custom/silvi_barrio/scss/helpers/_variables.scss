@@ -15,4 +15,32 @@ $silver: #c0c0c0;
 
 // Silvi colors.
 $s-black: #111e27;
+$s-black-2: #20394b;
 $s-yellow: #ffc815;
+$s-white-2: #e6e6e6;
+
+// Media settings.
+$size-lg: 1199px;
+$size-md: 991px;
+$size-sm: 767px;
+$size-xs: 575px;
+$size-ultra-xs: 478px;
+
+$container-lg: 1140px;
+$container-md: 960px;
+$container-sm: 720px;
+
+$container-margin-lg: calc((100% - #{$container-lg}) / 2);
+$container-margin-md: calc((100% - #{$container-md}) / 2);
+$container-margin-sm: calc((100% - #{$container-sm}) / 2);
+
+$max-lg: '(max-width: #{$size-lg})';
+$max-md: '(max-width: #{$size-md})';
+$max-sm: '(max-width: #{$size-sm})';
+$max-xs: '(max-width: #{$size-xs})';
+
+$min-lg: '(min-width: #{$size-lg})';
+$min-md: '(min-width: #{$size-md})';
+$min-sm: '(min-width: #{$size-sm})';
+$min-xs: '(min-width: #{$size-xs})';
+$min-ultra-xs: '(min-width: #{$size-ultra-xs})';
