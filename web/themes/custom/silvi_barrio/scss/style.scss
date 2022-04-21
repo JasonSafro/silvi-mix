@@ -12,13 +12,14 @@
 @import 'layout/footer';
 
 // Pages.
-@import 'pages/front';
+@import 'pages/pages';
 @import 'pages/user-login';
 
 // Base.
 @import 'base/reset';
 @import 'base/default';
 @import 'base/form';
+@import 'base/view';
 
 // Common uses.
 @import 'common/uses';

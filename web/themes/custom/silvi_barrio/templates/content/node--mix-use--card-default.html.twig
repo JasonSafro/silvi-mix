@@ -66,7 +66,9 @@
  * @see template_preprocess_node()
  */
 #}
-jason
+{#{% set bac_image = file_url(node.field_mix_image.entity.uri.value) %}#}
+{#{% set bac_image = file_url(node.field_mix_image.0['#media'].field_media_image.entity.uri.value) %}#}
+{% set bac_image = file_url(content.field_mix_image['0']['#media'].field_media_image.entity.uri.value) %}
 {%
   set classes = [
     'node',
@@ -80,26 +82,21 @@ jason
 %}
 {{ attach_library('bartik/classy.node') }}
 <article{{ attributes.addClass(classes) }}>
-  <header>
-    {{ title_prefix }}
-      {% if label and not page %}
-      <h2{{ title_attributes.addClass('node__title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% if display_submitted %}
-      <div class="node__meta">
-        {{ author_picture }}
-        <span{{ author_attributes }}>
-          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        </span>
-        {{ metadata }}
-      </div>
-    {% endif %}
-  </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content }}
-    {{ create_new_mix_design_request }}
+    <div class="field-mix-image" style="background-image: url('{{ url('<front>')|render|split('/', -1)|join('/') ~ bac_image }}')">
+      <div class="content-overlay">
+        {{ title_prefix }}
+        {% if label and not page %}
+          <h2{{ title_attributes.addClass('node__title') }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+          </h2>
+        {% endif %}
+        {{ title_suffix }}
+        {{ content|without('field_mix_image', 'links', 'body') }}
+        <div class="field-new-mix-design-request">
+          {{ create_new_mix_design_request }}
+        </div>
+      </div>
+    </div>
   </div>
 </article>

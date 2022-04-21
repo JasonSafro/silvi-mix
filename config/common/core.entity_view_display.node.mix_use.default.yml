@@ -5,11 +5,10 @@ dependencies:
   config:
     - field.field.node.mix_use.body
     - field.field.node.mix_use.field_file
-    - field.field.node.mix_use.field_image
+    - field.field.node.mix_use.field_mix_image
     - node.type.mix_use
   module:
     - file
-    - image
     - text
     - user
 id: node.mix_use.default
@@ -32,14 +31,14 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
-  field_image:
-    type: image
+  field_mix_image:
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 102
+    weight: 104
     region: content
   links:
     settings: {  }

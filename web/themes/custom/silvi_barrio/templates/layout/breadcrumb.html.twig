@@ -1,0 +1,9 @@
+{% if page.breadcrumb %}
+  {% block breadcrumb %}
+    <div class="page-breadcrumb">
+      <div class="{{ container }} clearfix">
+        {{ page.breadcrumb }}
+      </div>
+    </div>
+  {% endblock %}
+{% endif %}

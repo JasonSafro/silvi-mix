@@ -91,34 +91,27 @@
       {% endblock %}
     {% endif %}
 
-    {% include '@silvi_barrio/layout/title.html.twig' %}
+    {% if page.page_title %}
+      {% block page_title %}
+        <div class="page-title">
+          <div class="clearfix">
+            {{ page.page_title }}
+          </div>
+        </div>
+      {% endblock %}
+    {% endif %}
 
     <div id="main-wrapper" class="layout-main-wrapper clearfix ">
       {% block content %}
-        <div id="main" class="{{ container }}">
-          {{ page.breadcrumb }}
+        <div id="main" class="">
           {{ page.tabs }}
-          <div class="row row-offcanvas row-offcanvas-left clearfix">
+          <div class="clearfix">
             <main{{ content_attributes }}>
               <section class="section">
                 <a id="main-content" tabindex="-1"></a>
                 {{ page.content }}
               </section>
             </main>
-            {% if page.sidebar_first %}
-              <div{{ sidebar_first_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_first }}
-                </aside>
-              </div>
-            {% endif %}
-            {% if page.sidebar_second %}
-              <div{{ sidebar_second_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_second }}
-                </aside>
-              </div>
-            {% endif %}
           </div>
         </div>
       {% endblock %}

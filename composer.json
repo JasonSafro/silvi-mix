@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.1",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/core-composer-scaffold": "^9.3",
@@ -25,6 +26,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/require_login": "^2.4",
         "drupal/social_media_links": "^2.8",
+        "drupal/twig_tweak": "^3.1",
         "drush/drush": "^11.0"
     },
     "conflict": {
@@ -93,6 +95,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/core": {
+                "#3254245 TypeError: Argument 1 passed to Drupal\\Core\\File\\FileUrlGenerator::generateString()": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch"
+            }
         }
     }
 }

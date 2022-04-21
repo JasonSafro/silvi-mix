@@ -1,36 +1,41 @@
-uuid: 74abd4a3-7807-4dd0-9ec1-a52314181abd
+uuid: fb88202c-fdc9-4224-a3a2-e3666f2d34e5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.mix_use
+    - field.storage.media.field_media_image
+    - media.type.image
   module:
     - image
-id: node.mix_use.field_image
-field_name: field_image
-entity_type: node
-bundle: mix_use
+  enforced:
+    module:
+      - media
+_core:
+  default_config_hash: HGRX21ciyn7K-q8KMxsKHQvIB4SHT-A3bqzmNDnGKyc
+id: media.image.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: image
 label: Image
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: mix_use/image
+  file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: false
+  alt_field_required: true
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null

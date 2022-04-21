@@ -1,12 +1,4 @@
-.path-user {
-  .section-page {
-    //height: 100vh;
-    //display: flex;
-  }
-}
-
 .user-forms {
-  display: flex;
   height: 100%;
 
   .section {
@@ -14,7 +6,7 @@
 
     @media #{$min-md} {
       height: 100vh;
-      grid-template: calc(100vh / 3) auto / repeat(2, auto);
+      grid-template: calc(100vh / 3) auto / repeat(2, 1fr);
     }
   }
 

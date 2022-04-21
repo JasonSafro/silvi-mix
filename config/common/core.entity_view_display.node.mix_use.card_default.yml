@@ -6,12 +6,12 @@ dependencies:
     - core.entity_view_mode.node.card_default
     - field.field.node.mix_use.body
     - field.field.node.mix_use.field_file
-    - field.field.node.mix_use.field_image
-    - image.style.thumbnail
+    - field.field.node.mix_use.field_mix_image
     - node.type.mix_use
   module:
-    - image
+    - file
     - layout_builder
+    - text
     - user
 third_party_settings:
   layout_builder:
@@ -22,12 +22,27 @@ targetEntityType: node
 bundle: mix_use
 mode: card_default
 content:
-  field_image:
-    type: image
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_file:
+    type: file_default
     label: hidden
     settings:
-      image_link: ''
-      image_style: thumbnail
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_mix_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 1
     region: content
@@ -36,6 +51,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  body: true
-  field_file: true
+hidden: {  }

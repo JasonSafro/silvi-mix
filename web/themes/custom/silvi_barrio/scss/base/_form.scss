@@ -29,6 +29,9 @@
   .form-actions {
     margin-left: 110px;
     margin-bottom: 0 !important;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 
     .btn {
       display: inline-flex;
@@ -45,6 +48,16 @@
 
       &:hover {
         background: $s-black-2;
+      }
+    }
+
+    .user-reset-password-link {
+      font: 400 1rem/1.16 $font-work;
+      color: $s-black;
+      margin-left: 20px;
+
+      &:hover {
+        color: $s-yellow;
       }
     }
   }
