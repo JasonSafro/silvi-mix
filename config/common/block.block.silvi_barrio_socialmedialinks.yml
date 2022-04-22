@@ -18,102 +18,102 @@ settings:
   label_display: visible
   provider: social_media_links
   platforms:
-    linkedin:
-      value: ''
+    facebook:
+      value: www.facebook.com/silvimaterials
       description: ''
-      weight: '-10'
+      weight: '-34'
+    youtube_channel:
+      value: www.youtube.com/channel/UCCCc2688AZROCgnJwZa9tDw
+      description: ''
+      weight: '-33'
+    linkedin:
+      value: www.linkedin.com/company/silvi-materials/
+      description: ''
+      weight: '-32'
+    instagram:
+      value: www.instagram.com/silvi_materials/
+      description: ''
+      weight: '-31'
     flickr:
       value: ''
       description: ''
-      weight: '-9'
+      weight: '-30'
     github:
       value: ''
       description: ''
-      weight: '-8'
+      weight: '-29'
     bitbucket:
       value: ''
       description: ''
-      weight: '-7'
+      weight: '-28'
     pinterest:
       value: ''
       description: ''
-      weight: '-6'
+      weight: '-27'
     gitlab:
       value: ''
       description: ''
-      weight: '-5'
+      weight: '-26'
     email:
       value: ''
       description: ''
-      weight: '-4'
-    facebook:
-      value: www.facebook.com
-      description: ''
-      weight: '-3'
+      weight: '-25'
     xing:
       value: ''
       description: ''
-      weight: '-2'
+      weight: '-24'
     tumblr:
       value: ''
       description: ''
-      weight: '-1'
+      weight: '-23'
     googleplus:
       value: ''
       description: ''
-      weight: '0'
+      weight: '-22'
     youtube:
       value: ''
       description: ''
-      weight: '1'
+      weight: '-21'
     vkontakte:
       value: ''
       description: ''
-      weight: '2'
-    youtube_channel:
-      value: www.youtube.com
-      description: ''
-      weight: '3'
+      weight: '-20'
     whatsapp:
       value: ''
       description: ''
-      weight: '4'
+      weight: '-19'
     rss:
       value: ''
       description: ''
-      weight: '5'
+      weight: '-18'
     behance:
       value: ''
       description: ''
-      weight: '6'
-    instagram:
-      value: ''
-      description: ''
-      weight: '7'
+      weight: '-17'
     slideshare:
       value: ''
       description: ''
-      weight: '8'
+      weight: '-16'
     contact:
       value: ''
       description: ''
-      weight: '9'
+      weight: '-15'
     website:
       value: ''
       description: ''
-      weight: '10'
+      weight: '-14'
     vimeo:
       value: ''
       description: ''
-      weight: '11'
+      weight: '-13'
     drupal:
       value: ''
       description: ''
-      weight: '12'
+      weight: '-12'
     twitter:
       value: ''
       description: ''
-      weight: '13'
+      weight: '-11'
   appearance:
     orientation: h
     show_name: 0
