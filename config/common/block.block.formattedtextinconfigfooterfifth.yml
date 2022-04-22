@@ -1,0 +1,24 @@
+uuid: e4377273-916a-4b1b-a4d5-b5e7a1515f71
+langcode: en
+status: true
+dependencies:
+  module:
+    - silvi_mix
+  theme:
+    - silvi_barrio
+id: formattedtextinconfigfooterfifth
+theme: silvi_barrio
+region: footer_fifth
+weight: 0
+provider: null
+plugin: formatted_text_in_config
+settings:
+  id: formatted_text_in_config
+  label: 'Visitor website'
+  label_display: '0'
+  provider: silvi_mix
+  formatted_text: "<p>This website is intended for visitors from the United States.</p>\r\n\r\n<p class=\"copyright\">© 2022 Silvi Materials</p>\r\n"
+  formatted_text_format: full_html
+  common_usage: 'no'
+  css_classes: ''
+visibility: {  }

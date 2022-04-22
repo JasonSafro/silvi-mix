@@ -102,10 +102,15 @@ body {
 .site-footer .block-social-media-links .content .social-media-links--platforms a:hover {
   color: #ffffff;
 }
-.site-footer #block-thiswebsiteisintended {
+.site-footer #block-formattedtextinconfigfooterfifth {
   margin: 20px 40px 20px 0;
   font: 400 0.75rem "Work Sans", sans-serif;
   color: #ffffff;
+}
+.site-footer #block-formattedtextinconfigfooterfifth .content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .page-view-mix-uses .page-title {
@@ -140,7 +145,7 @@ body {
 }
 @media (min-width: 991px) {
   .user-forms .section {
-    height: 100vh;
+    height: 90vh;
     grid-template: 33.3333333333vh auto/repeat(2, 1fr);
   }
 }
@@ -265,6 +270,11 @@ a {
   display: grid;
   grid-template-columns: 110px 1fr;
 }
+.user-pass fieldset.form-item-forgot-password-form-title, .user-pass fieldset.form-item-login-form-title,
+.user-login-form fieldset.form-item-forgot-password-form-title,
+.user-login-form fieldset.form-item-login-form-title {
+  grid-template-columns: 1fr;
+}
 .user-pass fieldset label,
 .user-login-form fieldset label {
   display: flex;
@@ -282,6 +292,15 @@ a {
 .user-pass fieldset .description,
 .user-login-form fieldset .description {
   display: none;
+}
+.user-pass .user-form-title,
+.user-login-form .user-form-title {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  font: 700 1.25rem/1.09 "Work Sans", sans-serif;
+  color: #111e27;
+  margin-bottom: 1rem;
 }
 .user-pass .form-actions,
 .user-login-form .form-actions {
@@ -393,16 +412,17 @@ a {
 }
 .view-mix-uses .view-content .content-overlay .file--application-pdf {
   background: transparent;
+  display: flex;
 }
 .view-mix-uses .view-content .content-overlay .field--name-field-file,
 .view-mix-uses .view-content .content-overlay .field-new-mix-design-request {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   position: relative;
 }
 @media (min-width: 991px) {
   .view-mix-uses .view-content .content-overlay .field--name-field-file,
 .view-mix-uses .view-content .content-overlay .field-new-mix-design-request {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 .view-mix-uses .view-content .content-overlay .field--name-field-file:before,
@@ -411,21 +431,20 @@ a {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  height: 25px;
+  width: 25px;
 }
 .view-mix-uses .view-content .content-overlay .field--name-field-file:before {
-  background: url("../images/pdf.png") no-repeat 0 0;
+  background: url("../svg/pdf.svg") no-repeat 0 0;
   background-size: contain;
-  height: 30px;
-  width: 26px;
   left: -10px;
 }
 @media (min-width: 991px) {
   .view-mix-uses .view-content .content-overlay .field-new-mix-design-request:before {
-    background: url("../images/circle-arrow.png") no-repeat 0 0;
+    background: url("../svg/arrow.svg") no-repeat 0 0;
     background-size: contain;
-    height: 30px;
-    width: 26px;
     left: -30px;
+    transform: translate(0, -50%) rotateY(180deg);
   }
 }
 .view-mix-uses .view-content .content-overlay .field-new-mix-design-request a,

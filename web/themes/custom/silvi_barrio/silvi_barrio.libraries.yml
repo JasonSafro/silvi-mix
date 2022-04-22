@@ -34,3 +34,8 @@ fonts:
     theme:
       '//fonts.googleapis.com/css?family=Work+Sans:wght@400;700&display=swap': { type: external, minified: true }
       '//fonts.googleapis.com/css2?family=Teko:wght@300;500;600&display=swap': { type: external, minified: true }
+fontawesome:
+  version: VERSION
+  css:
+    component:
+      //use.fontawesome.com/releases/v5.13.0/css/all.css: { type: external }

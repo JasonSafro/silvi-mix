@@ -80,9 +80,15 @@
     }
   }
 
-  #block-thiswebsiteisintended {
+  #block-formattedtextinconfigfooterfifth {
     margin: 20px 40px 20px 0;
     font: 400 .75rem $font-work;
     color: $white;
+
+    .content {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
   }
 }

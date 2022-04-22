@@ -76,15 +76,16 @@
 
       .file--application-pdf {
         background: transparent;
+        display: flex;
       }
 
       .field--name-field-file,
       .field-new-mix-design-request {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         position: relative;
 
         @media #{$min-md} {
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
 
         &:before {
@@ -92,15 +93,15 @@
           position: absolute;
           top: 50%;
           transform: translate(0, -50%);
+          height: 25px;
+          width: 25px;
         }
       }
 
       .field--name-field-file {
         &:before {
-          background: url('#{$image-path}pdf.png') no-repeat 0 0;
+          background: url('#{$svg-path}pdf.svg') no-repeat 0 0;
           background-size: contain;
-          height: 30px;
-          width: 26px;
           left: -10px;
         }
       }
@@ -109,11 +110,10 @@
 
         @media #{$min-md} {
           &:before {
-            background: url('#{$image-path}circle-arrow.png') no-repeat 0 0;
+            background: url('#{$svg-path}arrow.svg') no-repeat 0 0;
             background-size: contain;
-            height: 30px;
-            width: 26px;
             left: -30px;
+            transform: translate(0, -50%) rotateY(180deg);
           }
         }
       }
