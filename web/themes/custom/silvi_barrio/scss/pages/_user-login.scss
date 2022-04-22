@@ -5,7 +5,7 @@
     display: grid;
 
     @media #{$min-md} {
-      height: 100vh;
+      height: 90vh;
       grid-template: calc(100vh / 3) auto / repeat(2, 1fr);
     }
   }

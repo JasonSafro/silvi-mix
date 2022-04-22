@@ -18,7 +18,7 @@ settings:
   label: 'Login Page Banner'
   label_display: '0'
   provider: silvi_mix
-  formatted_text: "<p><img alt=\"4\" data-entity-type=\"file\" data-entity-uuid=\"5b268e94-6f31-480a-8f76-059872fb1117\" src=\"/sites/default/files/inline-images/about-scaled.jpg\" /></p>\r\n\r\n<section class=\"text-overlay\">\r\n<h4>COMMITTED to QUALITY</h4>\r\n\r\n<p>Built WITH SILVI</p>\r\n</section>\r\n"
+  formatted_text: "<p><img alt=\"q\" data-entity-type=\"file\" data-entity-uuid=\"184ceebb-7383-42c7-b236-211d43bef6fd\" src=\"/sites/default/files/inline-images/about-scaled.jpg\" /></p>\r\n\r\n<section class=\"text-overlay\">\r\n<h4>COMMITTED to QUALITY</h4>\r\n\r\n<p>Built WITH SILVI</p>\r\n</section>\r\n"
   formatted_text_format: full_html
   css_classes: homepage-banner
   common_usage: full_width_banner

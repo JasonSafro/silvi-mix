@@ -7,6 +7,11 @@
     display: grid;
     grid-template-columns: 110px 1fr;
 
+    &.form-item-forgot-password-form-title,
+    &.form-item-login-form-title {
+      grid-template-columns: 1fr;
+    }
+
     label {
       display: flex;
       align-items: flex-end;
@@ -24,6 +29,15 @@
     .description {
       display: none;
     }
+  }
+
+  .user-form-title {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font: 700 1.25rem/1.09 $font-work;
+    color: $s-black;
+    margin-bottom: 1rem;
   }
 
   .form-actions {

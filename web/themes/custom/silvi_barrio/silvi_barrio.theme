@@ -41,8 +41,24 @@ function silvi_barrio_form_system_theme_settings_alter(&$form, FormStateInterfac
 function silvi_barrio_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'user_pass') {
     $form['name']['#title'] = t('Username');
+    $form['forgot_password_form_title'] = [
+      '#type' => 'item',
+      '#title' => '',
+      '#weight' => -1,
+      '#markup' => '
+        <div class="user-form-title">' . t('Forgot Password') . '</div>
+      ',
+    ];
   }
   if ($form_id == 'user_login_form') {
+    $form['login_form_title'] = [
+      '#type' => 'item',
+      '#title' => '',
+      '#weight' => -1,
+      '#markup' => '
+        <div class="user-form-title">' . t('Login') . '</div>
+      ',
+    ];
     // Add reset password link.
     $url_object = Url::fromRoute('user.pass');
     $form['actions']['password_reset_link'] = [
