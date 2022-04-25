@@ -32,6 +32,11 @@
         height: 600px;
       }
 
+      &:hover:after {
+        opacity: .7;
+        transition: ease all .3s;
+      }
+
       &:after {
         content: '';
         position: absolute;

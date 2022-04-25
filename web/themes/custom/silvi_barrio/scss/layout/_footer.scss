@@ -15,6 +15,14 @@
     .region-footer-first {
       width: 200px;
     }
+
+    .region-footer-fourth {
+      justify-self: center;
+
+      @media #{$min-md}{
+        justify-self: end;
+      }
+    }
   }
 
   .site-footer__bottom {
@@ -81,7 +89,7 @@
   }
 
   #block-formattedtextinconfigfooterfifth {
-    margin: 20px 40px 20px 0;
+    margin: 20px 0 20px 0;
     font: 400 .75rem $font-work;
     color: $white;
 
