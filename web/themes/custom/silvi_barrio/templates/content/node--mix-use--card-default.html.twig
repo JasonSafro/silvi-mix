@@ -92,6 +92,7 @@
           </h2>
         {% endif %}
         {{ title_suffix }}
+        {{ content.body }}
         {{ content|without('field_mix_image', 'links', 'body') }}
         <div class="field-new-mix-design-request">
           {{ create_new_mix_design_request }}

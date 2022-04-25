@@ -19,6 +19,14 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
+    .views-row {
+      &:hover {
+        .field--name-body {
+          display: block;
+        }
+      }
+    }
+
     .field-mix-image {
       display: flex;
       min-height: 300px;
@@ -79,6 +87,19 @@
         }
       }
 
+      .field--name-body {
+        display: none;
+        font: 600 .875rem/1.16 $font-work;
+        color: $white;
+        text-align: center;
+        margin-top: 25px;
+        text-transform: none;
+
+        @media #{$min-md} {
+          font: 600 1.5rem/1.16 $font-work;
+        }
+      }
+
       .file--application-pdf {
         background: transparent;
         display: flex;
@@ -112,7 +133,6 @@
       }
 
       .field-new-mix-design-request {
-
         @media #{$min-md} {
           &:before {
             background: url('#{$svg-path}arrow.svg') no-repeat 0 0;
