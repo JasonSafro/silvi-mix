@@ -1,0 +1,22 @@
+uuid: 38dd247d-e904-4a1a-946f-cbf085800761
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - silvi_barrio
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: silvi_barrio_breadcrumbs
+theme: silvi_barrio
+region: breadcrumb
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

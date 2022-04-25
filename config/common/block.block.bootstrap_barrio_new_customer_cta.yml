@@ -1,0 +1,29 @@
+uuid: 41763302-e3d1-435f-92fe-34dc71baacfb
+langcode: en
+status: true
+dependencies:
+  module:
+    - silvi_mix
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_new_customer_cta
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: formatted_text_in_config
+settings:
+  id: formatted_text_in_config
+  label: 'New Customer CTA'
+  label_display: visible
+  provider: silvi_mix
+  formatted_text: "<h1>Lorem Title</h1>\r\n\r\n<p>Lorem ipsum work with Silvi</p>\r\n\r\n<p><a href=\"http://silvi.com\">Some link</a></p>\r\n"
+  formatted_text_format: full_html
+  common_usage: half_width_text_on_image
+  css_classes: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/user/login\r\n/user/password"

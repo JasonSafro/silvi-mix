@@ -57,3 +57,6 @@
 
 # Ignore PHPStorm files
 .idea
+
+# Ignore node modules
+/web/**/node_modules/

@@ -1,0 +1,20 @@
+uuid: b889bc05-38ec-4b84-8038-015f940c23e8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - silvi_barrio
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: silvi_barrio_local_actions
+theme: silvi_barrio
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

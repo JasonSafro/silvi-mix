@@ -1,0 +1,29 @@
+uuid: 4731d87a-9210-4c94-b97a-b8d2358f4f03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mix_image
+    - media.type.image
+    - node.type.mix_use
+id: node.mix_use.field_mix_image
+field_name: field_mix_image
+entity_type: node
+bundle: mix_use
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

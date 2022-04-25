@@ -1,0 +1,25 @@
+.page-view-mix-uses {
+  .page-title {
+    padding: 33px 0 30px;
+    background: $s-black;
+
+    @media #{$min-md} {
+      padding: 41px 0 51px;
+    }
+
+    h1 {
+      color: $white;
+      font: 600 2.25rem/1.1 $font-teko;
+      text-transform: uppercase;
+      margin: 0;
+
+      @media #{$min-md} {
+        font: 600 3rem/1.1 $font-teko;
+      }
+    }
+
+    .row {
+      margin: 0;
+    }
+  }
+}

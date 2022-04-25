@@ -1,0 +1,78 @@
+.user-pass,
+.user-login-form {
+  background: $s-white-2;
+  padding: 20px 50px;
+
+  fieldset {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+
+    &.form-item-forgot-password-form-title,
+    &.form-item-login-form-title {
+      grid-template-columns: 1fr;
+    }
+
+    label {
+      display: flex;
+      align-items: flex-end;
+
+      &:after {
+        margin: auto 0.3em;
+      }
+    }
+
+    input {
+      border-radius: 0;
+      border: 1px solid $black;
+    }
+
+    .description {
+      display: none;
+    }
+  }
+
+  .user-form-title {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font: 700 1.25rem/1.09 $font-work;
+    color: $s-black;
+    margin-bottom: 1rem;
+  }
+
+  .form-actions {
+    margin-left: 110px;
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      color: $s-black;
+      background: $s-yellow;
+      text-transform: uppercase;
+      text-decoration: none;
+      font: 600 1.125rem/1.42 $font-teko;
+      padding: 8px 35px 3px;
+      margin: 6px 0 0;
+      border: none;
+      border-radius: 0;
+
+      &:hover {
+        background: $s-black-2;
+      }
+    }
+
+    .user-reset-password-link {
+      font: 400 1rem/1.16 $font-work;
+      color: $s-black;
+      margin-left: 20px;
+
+      &:hover {
+        color: $s-yellow;
+      }
+    }
+  }
+}

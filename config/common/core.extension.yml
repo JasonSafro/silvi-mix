@@ -30,6 +30,8 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -50,6 +52,7 @@ module:
   text: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
@@ -58,4 +61,6 @@ module:
 theme:
   bartik: 0
   seven: 0
+  bootstrap_barrio: 0
+  silvi_barrio: 0
 profile: standard

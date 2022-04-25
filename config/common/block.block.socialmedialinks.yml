@@ -71,7 +71,7 @@ settings:
       description: ''
       weight: '2'
     youtube_channel:
-      value: ''
+      value: www.youtube.com
       description: ''
       weight: '3'
     whatsapp:

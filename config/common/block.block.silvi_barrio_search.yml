@@ -1,0 +1,23 @@
+uuid: a89fc4a5-adf3-4e78-89ad-912f659a6c07
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - silvi_barrio
+_core:
+  default_config_hash: jQ-C8l3dJPqYCGST1e-kSjR14PDP4wq-iFbp8dMFcRo
+id: silvi_barrio_search
+theme: silvi_barrio
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

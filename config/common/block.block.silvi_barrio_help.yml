@@ -1,0 +1,22 @@
+uuid: d653b7a0-f7c9-4c3c-a5e0-71bce2a84742
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - silvi_barrio
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: silvi_barrio_help
+theme: silvi_barrio
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -18,7 +18,7 @@ settings:
   label: 'New Customer CTA'
   label_display: visible
   provider: silvi_mix
-  formatted_text: "<div class=\"layout__region layout__region--second\">\r\n<div class=\"usage-half_width_text_on_image block block-silvi-mix block-formatted-text-in-config\">\r\n<h2>Become a Customer</h2>\r\n\r\n<div class=\"content\">\r\n<p><a href=\"http://mix.silvi.local/contact-us\">Contact Us</a></p>\r\n\r\n<p>==================</p>\r\n\r\n<p>@coop - copy the image to the right of \"Beyond Materials\" from https://www.silvi.com/services/</p>\r\n\r\n<p>@coop - please figure out a system for the client to enter title, sub-title, and content (in blocks) that's consistent. If you want the titles to be block titles, great. If you want to use the Heading1, Heading2, etc classes from the WYSIWYG, great. Which ever you prefer, please apply it consistently.</p>\r\n</div>\r\n</div>\r\n</div>\r\n"
+  formatted_text: "<h1>Lorem Title</h1>\r\n\r\n<p>Lorem ipsum work with Silvi</p>\r\n\r\n<p><a href=\"http://silvi.com\">Some link</a></p>\r\n"
   formatted_text_format: full_html
   common_usage: half_width_text_on_image
   css_classes: ''

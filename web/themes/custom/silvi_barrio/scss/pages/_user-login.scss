@@ -1,0 +1,23 @@
+.user-forms {
+  height: 100%;
+
+  .section {
+    display: grid;
+
+    @media #{$min-md} {
+      height: 90vh;
+      grid-template: calc(100vh / 3) auto / repeat(2, 1fr);
+    }
+  }
+
+  #block-silvi-barrio-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+
+    @media #{$min-md} {
+      padding: 0 10%;
+    }
+  }
+}

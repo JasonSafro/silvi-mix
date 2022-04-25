@@ -1,0 +1,20 @@
+uuid: 9f6d18df-c803-4f4f-9e23-b93b2a07246d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - silvi_barrio
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: silvi_barrio_page_title
+theme: silvi_barrio
+region: page_title
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

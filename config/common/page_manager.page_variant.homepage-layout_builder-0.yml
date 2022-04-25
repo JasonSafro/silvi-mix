@@ -27,18 +27,7 @@ variant_settings:
         label: 'Content Blocks'
         context_mapping: {  }
         column_widths: 50-50
-      components:
-        aa8168d1-6c3a-4500-b830-6eb7d046baa1:
-          uuid: aa8168d1-6c3a-4500-b830-6eb7d046baa1
-          region: first
-          configuration:
-            id: user_login_block
-            label: 'User login'
-            label_display: visible
-            provider: user
-            context_mapping: {  }
-          weight: 0
-          additional: {  }
+      components: {  }
       third_party_settings: {  }
 page: homepage
 selection_criteria: {  }
