@@ -91,15 +91,7 @@
       {% endblock %}
     {% endif %}
 
-    {% if page.page_title %}
-      {% block page_title %}
-        <div class="page-title">
-          <div class="clearfix">
-            {{ page.page_title }}
-          </div>
-        </div>
-      {% endblock %}
-    {% endif %}
+    {% include '@silvi_barrio/layout/title.html.twig' %}
 
     <div id="main-wrapper" class="layout-main-wrapper clearfix ">
       {% block content %}

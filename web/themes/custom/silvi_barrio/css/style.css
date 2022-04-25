@@ -55,6 +55,14 @@ body {
 .site-footer .site-footer__top .region-footer-first {
   width: 200px;
 }
+.site-footer .site-footer__top .region-footer-fourth {
+  justify-self: center;
+}
+@media (min-width: 991px) {
+  .site-footer .site-footer__top .region-footer-fourth {
+    justify-self: end;
+  }
+}
 .site-footer .site-footer__bottom {
   border-top: 1px solid rgba(216, 216, 216, 0.2);
 }
@@ -103,7 +111,7 @@ body {
   color: #ffffff;
 }
 .site-footer #block-formattedtextinconfigfooterfifth {
-  margin: 20px 40px 20px 0;
+  margin: 20px 0 20px 0;
   font: 400 0.75rem "Work Sans", sans-serif;
   color: #ffffff;
 }
@@ -371,6 +379,10 @@ a {
     min-height: 600px;
     height: 600px;
   }
+}
+.view-mix-uses .view-content .field-mix-image:hover:after {
+  opacity: 0.7;
+  transition: ease all 0.3s;
 }
 .view-mix-uses .view-content .field-mix-image:after {
   content: "";
