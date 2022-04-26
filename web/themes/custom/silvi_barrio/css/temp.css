@@ -1,0 +1,7 @@
+.user-forms .section {
+  grid-template: 50vh auto/repeat(2, 1fr);
+}
+
+.user-forms #block-silvi-barrio-banner-homepage {
+  height: 50vh;
+}
